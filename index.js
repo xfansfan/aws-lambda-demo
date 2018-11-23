@@ -6,6 +6,7 @@ exports.handler = function(event, context) {
         TableName:'User'
    };
     //Add some comment.. to test jenkins webhook.
+    // another comment for test jenkins lambda plugin..
     dynamo.scan(getParams, function(err, data){
         if (err) console.log(err, err.stack); // an error occurred
         else {

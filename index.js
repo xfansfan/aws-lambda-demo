@@ -5,7 +5,7 @@ exports.handler = function(event, context) {
     var getParams = {
         TableName:'User'
    };
-    //Add some comment.....123123123
+    //Add some comment.. to test jenkins webhook.
     dynamo.scan(getParams, function(err, data){
         if (err) console.log(err, err.stack); // an error occurred
         else {
